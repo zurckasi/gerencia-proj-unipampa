@@ -10,7 +10,7 @@ const removeClass = (divEvent) => {
 transition = (divEvent) => {
     const element = document.querySelector(`#${divEvent}`);
     element.classList.replace("visually-hidden", "visible");
-    element.scrollIntoView({ block: "center", behavior: "smooth" });
+    element.scrollIntoView({ block: "start", behavior: "smooth" });
     if (divEvent == "top") {
         const divsVisible = document.querySelectorAll(".page");
         divsVisible.forEach((element) => {
