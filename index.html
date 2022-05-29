@@ -5,13 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- CSS only -->
+    <link rel="stylesheet" href="./static/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
-    <script src="static/js/main.js"></script>
+    <script src="./static/js/main.js"></script>
     <title>Unipampa - Equipe 02</title>
 </head>
 
@@ -21,7 +19,7 @@
         <div class="container-fluid" id="top">
             <header class="p-2 m-2 animate__animated animate__backInDown">
                 <p class="lead">Proposta de Software</p>
-                <div class="display-3 mb-4">Sistema de Avaliação de Desempenho</div>
+                <div class="display-3 m-1">Sistema de Avaliação de Desempenho</div>
             </header>
         </div>
         <div>
@@ -133,7 +131,7 @@
                         </p>
                         <div class="row text-center align-items-center justify-content-center">
                             <div class="col-12 animate__animated animate__backInRight">
-                                <img src="static/images/plan_matriz.png" alt="" class="img-fluid shadow-lg" />
+                                <img src="./static/images/plan_matriz.png" alt="" class="img-fluid shadow-lg" />
                             </div>
                         </div>
                     </div>
@@ -145,7 +143,7 @@
                         </p>
                         <div class="row text-center align-items-center justify-content-center mb-5">
                             <div class="col-12 animate__animated animate__backInRight">
-                                <img src="static/images/plan_ativid.png" alt="" class="img-fluid shadow-lg" />
+                                <img src="./static/images/plan_ativid.png" alt="" class="img-fluid shadow-lg" />
                             </div>
                         </div>
                     </div>
@@ -163,7 +161,7 @@
                         </p>
                         <div class="row text-center align-items-center justify-content-center">
                             <div class="col-12 animate__animated animate__backInRight">
-                                <img src="static/images/parecer-prog-merit.png" alt="" class="img-fluid shadow-lg" />
+                                <img src="./static/images/parecer-prog-merit.png" alt="" class="img-fluid shadow-lg" />
                             </div>
                         </div>
                     </div>
@@ -187,40 +185,52 @@
             </div>
             <div class="row text-center align-items-center justify-content-center">
                 <div class="col">
-                    <img src="static/images/cronograma.png" alt="" class="img-fluid shadow-lg" />
+                    <img src="./static/images/cronograma.png" alt="" class="img-fluid shadow-lg" />
                 </div>
             </div>
         </div>
     </div>
-    <div id="recursos-page" class="h-100 visually-hidden page" style="overflow: scroll;">
-        <div class="container h-100">
-            <div class="row h-50 text-center align-items-center justify-content-center">
-                <div class="col-12 animate__animated animate__backInLeft">
-                    <h3 class="display-3"><strong>Recursos Humanos</strong></h3>
-                    <p class="lead display-6">
+    <div id="recursos-page" class="h-100 visually-hidden page">
+        <div class="container h-100 d-flex flex-column justify-content-around">
+            <div class="bg-white h-75 d-flex flex-column justify-content-around text-black rounded px-4 my-5 mx-auto text-center border-bottom container col-12 py-5">
+                <h1 class="display-4 fw-bold">Recursos Humanos</h1>
+                <div class="col-lg-12 mx-auto">
+                    <p class="lead display-6 mb-4">
                         Serão necessários espaços para realização dos treinamentos,
                         computadores para acessar o sistema, ao menos um servidor para
                         hospedar a aplicação, etc.
-                    </p>
-                    <p class="lead display-6">
                         Todos os profissionais envolvidos fazem parte do NTIC - Núcleo de
                         Tecnologia da Informação e Comunicação da UNIPAMPA. O projeto
                         conta com os seguintes Recursos Humanos:
                     </p>
                 </div>
-            </div>
-            <div class="row text-center align-items-center justify-content-center">
-                <div class="col-12 animate__animated animate__backInRight">
-                    <img src="static/images/recursos.png" alt="" class="img-fluid shadow-lg" />
+                <div class=" col-12 overflow-hidden" style="max-height: 50vh;">
+                    <div class="container px-5">
+                        <img src="./static/images/recursos.png" class="img-fluid border rounded-3 shadow-lg mb-4" width="700" height="500" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="custos-page" class="h-100 visually-hidden page">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-        doloremque mollitia fugit cupiditate eveniet commodi tempora? Veritatis
-        itaque ad ab alias incidunt culpa quis ipsam. Repellendus vitae et
-        dignissimos enim.
+        <div class="container h-100">
+            <div class="row h-50 text-center align-items-center justify-content-center">
+                <div class="col-12">
+                    <h3 class="display-3"><strong>Custos Estimados</strong></h3>
+                    <p class="lead display-6">
+                        
+                    </p>
+                    <p class="lead display-6">
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="row h-50 text-center align-items-center justify-content-center">
+                <div class="col-12 ">
+                    <img src="./static/images/custos.png" alt="" class="img-fluid shadow-lg" />
+                </div>
+            </div>
+        </div>
     </div>
     <div id="etapas-page" class="h-100 visually-hidden page" style="overflow: scroll;">
         <div class="container h-100">
@@ -239,7 +249,7 @@
                         de requisitos, epic servidor, plano matriz, plano de atividade, availiação de
                         desempenho (TAS), treinamentos, availiação desempenho docentes e treinamento.
                     </p>
-                    <img src="static/images/estrutura_proj.png" alt="" class="img-fluid shadow-lg" style="margin: 25px 0 25px 0;" />
+                    <img src="./static/images/estrutura_proj.png" alt="" class="img-fluid shadow-lg" style="margin: 25px 0 25px 0;" />
                 </div>
                 <div class="col-12 animate__animated animate__backInLeft">
                     <p class="lead display-6 text-start">
@@ -248,7 +258,7 @@
                         serão realizadas pela equipa da PROPLAN. A organização da equipe de desenvolvimento
                         se dá da seguinte forma:
                     </p>
-                    <img src="static/images/equipe.png" alt="" class="img-fluid shadow-lg" />
+                    <img src="./static/images/equipe.png" alt="" class="img-fluid shadow-lg" />
                 </div>
             </div>
         </div>
@@ -276,7 +286,7 @@
                     </p>
                 </div>
                 <div class="col-6">
-                    <img src="static/images/gestao.png" alt="" class="img-fluid shadow-lg float-none" />
+                    <img src="./static/images/gestao.png" alt="" class="img-fluid shadow-lg float-none" />
                 </div>
             </div>
         </div>
@@ -287,8 +297,14 @@
         id="btn-back-to-top" style="position: fixed; bottom: 20px; right: 20px">
         ^
     </button>
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <audio>
+        <source src="./static/audio/swipe.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="soundtrack">
+        <source src="./static/audio/soundtrack.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
